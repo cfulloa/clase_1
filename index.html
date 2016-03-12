@@ -7,32 +7,19 @@
     <title>Title</title>
 </head>
 <body>
-<script src="angular.js"></script>
-<html ng-app>
-
-Nombre: <input type="text" ng-model="name">{{ name }}
-
-<div ng-init="nombres = [{name:'uno'},{name:'dos'},{name:'tres'}]">
-
-    <input type="text" ng-model="name">
-
-    <ul>
-        <li ng-repeat="nombre in nombres | filter: name | orderBy: 'name'">
-
-            <span>{{nombre.name | uppercase}}</span>
 
 
-        </li>
+<div ng-controller="StudentsController">
 
-    </ul>
+   <pre>
+       {{students}}
 
-
+   </pre>
 
 </div>
 
-
-
-</html>
+<script src="angular.js"></script>
+<script src="app.js"></script>
 
 
 </body>
